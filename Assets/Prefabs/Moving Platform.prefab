@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 4315317818293854624}
   - component: {fileID: 4315317818293854631}
   - component: {fileID: 4315317818293854630}
-  - component: {fileID: 4315317818293854625}
   - component: {fileID: 4315317818293854629}
   - component: {fileID: 4315317818293854650}
-  - component: {fileID: 4315317818293854628}
+  - component: {fileID: 6510627143202241647}
+  - component: {fileID: 4771582999189015490}
   m_Layer: 6
   m_Name: Moving Platform
   m_TagString: Untagged
@@ -91,7 +91,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!95 &4315317818293854630
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -108,23 +108,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
---- !u!114 &4315317818293854625
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4315317818293854627}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 479376c71444fd44981d3d78a788eab8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  speed: 2
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!61 &4315317818293854629
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -177,7 +161,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6752205, y: 0.13668907}
   m_EdgeRadius: 0
---- !u!114 &4315317818293854628
+--- !u!50 &6510627143202241647
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4315317818293854627}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &4771582999189015490
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -186,6 +191,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 4315317818293854627}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac011a6cc933ee445a42035b9b282718, type: 3}
+  m_Script: {fileID: 11500000, guid: a7b9c734f2efcf54fa5b3536fc886e1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waypoints: []
+  speed: 2
