@@ -8,11 +8,11 @@ using TMPro;
 public class GraveyardCutscene : MonoBehaviour
 {
     [SerializeField] private GameObject panel;
+    [SerializeField] private GameObject rawImage;
+    [SerializeField] private GameObject videoPlayer;
 
     private TMP_Text textDisplayed;
     private string originalText;
-    private bool hasFlower = true;
-    private bool hasLaidFlower = false;
 
     private void Start()
     {
@@ -20,30 +20,17 @@ public class GraveyardCutscene : MonoBehaviour
         originalText = textDisplayed.text;
     }
 
-    private void ChangeText(string text)
+    private void PlayVideo()
     {
-      textDisplayed.text = text;
+      rawImage.SetActive(true);
+      videoPlayer.SetActive(true);
     }
 
     private void Update()
     {
       if (Input.GetKeyDown(KeyCode.Return))
       {
-        if (hasFlower && !hasLaidFlower)
-        {
-          ChangeText("Lay flower?");
-          hasLaidFlower = true;
-        } else if (hasLaidFlower && hasLaidFlower)
-        {
-          SceneManager.LoadScene(0);
-        } else {
-          ChangeText(originalText);
-          //panel.SetActive(false);
-        }
+        Invoke("PlayVideo", 5f);
       }
-    }
-
-    public void pickUpFlower() {
-      hasFlower = true;
     }
 }
