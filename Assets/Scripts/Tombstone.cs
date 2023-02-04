@@ -8,7 +8,7 @@ public class Tombstone : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-      if (Input.GetKeyDown(KeyCode.Return))
+      if (Input.GetKeyDown(KeyCode.Return) && !panel.activeSelf)
       {
         panel.SetActive(true);
       }
