@@ -39,7 +39,7 @@ public class PlatformSticky : MonoBehaviour
       if (collision.gameObject.name == "Player")
       {
           collision.gameObject.transform.SetParent(null);
-          boxCollider.enabled = true;
+          //boxCollider.enabled = true;
       }
   }
 
