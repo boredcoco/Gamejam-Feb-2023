@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Testing.unity
     guid: 98cafa1900ec1514f92bd6cf9c3799f3
+  - enabled: 1
+    path: Assets/Scenes/PsychiatristScene.unity
+    guid: 13049b54ce84a4de89e02137b4464372
   m_configObjects: {}
