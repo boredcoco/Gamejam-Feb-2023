@@ -114588,6 +114588,10 @@ PrefabInstance:
       value: Moving Platform
       objectReference: {fileID: 0}
     - target: {fileID: 4771582999189015490, guid: 5eb29679cf11db94ea0e21be39576257, type: 3}
+      propertyPath: speed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4771582999189015490, guid: 5eb29679cf11db94ea0e21be39576257, type: 3}
       propertyPath: waypoints.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -116105,29 +116109,9 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 20, y: -3, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 21, y: -3, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 67
+  - m_RefCount: 65
     m_Data: {fileID: 11400000, guid: 1331e9e8af65c2541b1d9a39cce6d3eb, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -116142,7 +116126,7 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
   m_TileSpriteArray:
-  - m_RefCount: 67
+  - m_RefCount: 65
     m_Data: {fileID: 21300000, guid: 9618a1907355f0d4f982d79662b65726, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
@@ -116157,7 +116141,7 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
   m_TileMatrixArray:
-  - m_RefCount: 67
+  - m_RefCount: 65
     m_Data:
       e00: 1
       e01: 0
@@ -116194,7 +116178,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 67
+  - m_RefCount: 65
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -140263,6 +140247,26 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 20, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 16
+      m_TileSpriteIndex: 16
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 21, y: -3, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 16
+      m_TileSpriteIndex: 16
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 97, y: -3, z: 0}
     second:
       serializedVersion: 2
@@ -145187,7 +145191,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: fa9e166db6b0d094d8cdd989a03d086c, type: 2}
   - m_RefCount: 1465
     m_Data: {fileID: 11400000, guid: ec6655c9f9a79dc4f8643dae47fdd22c, type: 2}
-  - m_RefCount: 40
+  - m_RefCount: 42
     m_Data: {fileID: 11400000, guid: 1331e9e8af65c2541b1d9a39cce6d3eb, type: 2}
   - m_RefCount: 8
     m_Data: {fileID: 11400000, guid: 0964945d7ab07d9419d6eb9a10bae22d, type: 2}
@@ -145232,7 +145236,7 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: 439b7ac57fc49f6439c68991712113e4, type: 3}
   - m_RefCount: 1465
     m_Data: {fileID: 21300000, guid: 55627eadc9cf20e41b8f568650e8363b, type: 3}
-  - m_RefCount: 40
+  - m_RefCount: 42
     m_Data: {fileID: 21300000, guid: 9618a1907355f0d4f982d79662b65726, type: 3}
   - m_RefCount: 8
     m_Data: {fileID: 8320879303227901543, guid: a419b29d7ee1f4b45acf54016a814fbb, type: 3}
@@ -145245,7 +145249,7 @@ Tilemap:
   - m_RefCount: 27
     m_Data: {fileID: 21300000, guid: 7c4b188aa72cdfb4a80034584255df6d, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 2022
+  - m_RefCount: 2024
     m_Data:
       e00: 1
       e01: 0
@@ -145282,7 +145286,7 @@ Tilemap:
       e32: 7.15e-43
       e33: 7.16e-43
   m_TileColorArray:
-  - m_RefCount: 2022
+  - m_RefCount: 2024
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -145360,6 +145364,16 @@ CompositeCollider2D:
         Y: 141875008
       - X: 424375008
         Y: 141875008
+    - - X: 80000000
+        Y: 140000000
+      - X: 70000000
+        Y: 140000000
+      - X: 70000000
+        Y: 135000000
+      - X: 77500000
+        Y: 131875000
+      - X: 80000000
+        Y: 131875000
     - - X: 990000000
         Y: -10000000
       - X: 980000000
@@ -145413,10 +145427,6 @@ CompositeCollider2D:
       - X: 220000000
         Y: -50000000
       - X: 220000000
-        Y: -30000000
-      - X: 200000000
-        Y: -30000000
-      - X: 200000000
         Y: -27732144
       - X: -170000000
         Y: -27732144
@@ -145432,16 +145442,6 @@ CompositeCollider2D:
         Y: -170000000
       - X: 990000000
         Y: -170000000
-    - - X: 80000000
-        Y: 140000000
-      - X: 70000000
-        Y: 140000000
-      - X: 70000000
-        Y: 135000000
-      - X: 77500000
-        Y: 131875000
-      - X: 80000000
-        Y: 131875000
     - - X: 90000000
         Y: 130000000
       - X: 80000000
@@ -145714,9 +145714,7 @@ CompositeCollider2D:
       - {x: 23, y: -5.9999704}
       - {x: 22.999971, y: -5}
       - {x: 22, y: -4.9999704}
-      - {x: 21.999971, y: -3}
-      - {x: 20, y: -2.9999707}
-      - {x: 19.999971, y: -2.7732143}
+      - {x: 21.999971, y: -2.7732143}
       - {x: -17, y: -2.773185}
       - {x: -17.000029, y: 14}
       - {x: -42, y: 13.999971}
@@ -147167,6 +147165,10 @@ PrefabInstance:
     - target: {fileID: 4315317818293854627, guid: 5eb29679cf11db94ea0e21be39576257, type: 3}
       propertyPath: m_Name
       value: Moving Platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 4771582999189015490, guid: 5eb29679cf11db94ea0e21be39576257, type: 3}
+      propertyPath: speed
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4771582999189015490, guid: 5eb29679cf11db94ea0e21be39576257, type: 3}
       propertyPath: waypoints.Array.size
