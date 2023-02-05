@@ -24,7 +24,7 @@ public class GraveyardCutscene : MonoBehaviour
 
     private void LoadNext()
     {
-      SceneManager.LoadScene(2);
+      SceneManager.LoadScene(3);
     }
 
     private void PlayVideo()
