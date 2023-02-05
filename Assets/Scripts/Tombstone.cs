@@ -6,9 +6,9 @@ public class Tombstone : MonoBehaviour
 {
     [SerializeField] private GameObject panel;
 
-    private void OnCollisionStay2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-      if (Input.GetKeyDown(KeyCode.Return) && !panel.activeSelf)
+      if (!panel.activeSelf)
       {
         panel.SetActive(true);
       }

@@ -36,7 +36,7 @@ public class GraveyardCutscene : MonoBehaviour
 
     private void Update()
     {
-      if (Input.GetKeyDown(KeyCode.Return) && GameObject.Find("Flower") == null)
+      if (GameObject.Find("Flower") == null)
       {
         Invoke("PlayVideo", 5f);
       }
